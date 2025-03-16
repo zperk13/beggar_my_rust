@@ -172,8 +172,7 @@ impl std::fmt::Display for GameResult {
         if self.is_infinite {
             write!(
                 f,
-                "∞ tricks with a cycle of {}, ∞ cards with a cycle of {}",
-                self.tricks, self.cards
+                "∞ tricks, ∞ cards"
             )?;
         } else {
             write!(f, "{} tricks, {} cards: ", self.tricks, self.cards)?;
